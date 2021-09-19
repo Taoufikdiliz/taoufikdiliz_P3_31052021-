@@ -1,0 +1,32 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btn {
+    width: 35vh;
+    height: 22px;
+    margin: 40px auto auto;
+    padding: 21px;
+    background: linear-gradient($secondary-color, $primary-color);
+    border-radius: 25px;
+    color: $root-color;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@mixin placeCard {
+    margin: 50px 0 12em 0;
+    width: 100%;
+    height: 17em;
+    border-radius: 25px 25px 0 0;
+}
+
+@mixin placeInfo {
+        padding: 17em 0 0 30px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 19px;
+        margin-right: 60px;
+}
