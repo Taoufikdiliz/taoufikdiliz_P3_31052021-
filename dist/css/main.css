@@ -1,5 +1,5 @@
 .home-btn {
-  width: 35vh;
+  width: 40vh;
   height: 22px;
   margin: 40px auto auto;
   padding: 21px;
@@ -46,6 +46,21 @@
   margin-right: 60px;
 }
 
+li {
+  height: 83px;
+  border-radius: 25px;
+  background: #F6F6F6;
+  margin: 28px 30px 0px -20px;
+  box-shadow: 5px 5px 5px #dedede;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li:hover {
+  background: #F5EDFF;
+}
+
 .card_picture-three {
   margin: 50px 0 12em 0;
   width: 100%;
@@ -78,21 +93,6 @@
   margin-right: 60px;
 }
 
-li {
-  height: 83px;
-  border-radius: 25px;
-  background: #F6F6F6;
-  margin: 28px 30px 0px -20px;
-  box-shadow: 5px 5px 5px #dedede;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-li:hover {
-  background: #F5EDFF;
-}
-
 .menu-nav__number {
   position: absolute;
   left: 40px;
@@ -110,6 +110,25 @@ li:hover {
   right: 35px;
 }
 
+footer {
+  background: #353535;
+  color: white;
+  padding: 10px 0 46px 30px;
+}
+footer h1 {
+  font-weight: weight(light);
+  font-family: "Shrikhand", cursive;
+  font-size: 27px;
+  font-weight: 100;
+}
+footer a {
+  color: white;
+}
+
+.partner, .mail {
+  margin: 10px 0 8px 0px;
+}
+
 body {
   background: #fff;
   height: 100vh;
@@ -117,10 +136,11 @@ body {
   margin: 0;
 }
 
-h1 {
+.logo h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 40px;
   letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h2 {
@@ -179,17 +199,5 @@ main {
 }
 
 .nav, .card {
-  padding: 45px 0 100px 30px;
-}
-
-footer {
-  background: #353535;
-  color: white;
-  padding: 10px 0 46px 30px;
-}
-footer h1 {
-  font-size: 24px;
-}
-footer a {
-  color: white;
+  padding: 45px 30px 100px 30px;
 }/*# sourceMappingURL=main.css.map */
