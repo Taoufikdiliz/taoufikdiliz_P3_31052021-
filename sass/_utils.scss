@@ -4,18 +4,6 @@
     justify-content: center;
 }
 
-.home-btn {
-    width: 40vh;
-    height: 22px;
-    margin: 40px auto auto;
-    padding: 21px;
-    background: linear-gradient($secondary-color, $primary-color);
-    border-radius: 25px;
-    color: $root-color;
-    cursor: pointer;
-    font-size: 20px;
-}
-
 @mixin placeCard {
     margin: -2px -3px 8em -2px;
     width: auto;

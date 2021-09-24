@@ -3,14 +3,13 @@ i.far.fa-heart:hover {
 }
 
 footer {
-    background: #353535;
-    color: white;
+    background: $foot-color;
+    color: $root-color;
     padding: 10px 0 46px 30px;
         h1 {
-            font-weight: weight(light);
+            font-weight: weight(regular);
             font-family: "Shrikhand", cursive;
             font-size: 27px;
-            font-weight: 100;
         }
         a {
             color: white;

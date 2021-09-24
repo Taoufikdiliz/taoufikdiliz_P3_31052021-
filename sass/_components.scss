@@ -1,0 +1,22 @@
+@mixin homeButton {
+    margin: 40px auto auto;
+    padding: 21px;
+    border: none;
+    background: linear-gradient($secondary-color, $primary-color);
+    border-radius: 25px;
+    color: $root-color;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.order {
+    @include flexCenter;
+        margin-top: 15px;
+        padding-bottom: 95px;
+        .home-btn { 
+            width: 14em;
+            height: 3em;
+            @include flexCenter;
+            @include homeButton;
+    }
+}

@@ -2,50 +2,17 @@
 @import 'utils';
 @import 'pages';
 @import 'layouts';
+@import 'base';
+@import 'components';
 
 @function weight($weight-name) {
     @return map-get($font-weights, $weight-name);
 }
 
 body {
-    background: $root-color;
     height: 100vh;
     font-family: "Roboto", sans-serif;
     margin: 0;
-}
-
-.logo h1 {
-    font-size: 54px;
-    letter-spacing: 1px;
-    margin: 14px 0 23px 0;
-}
-h1 {
-    font-family: "Shrikhand", cursive;
-    font-size: 50px;
-    font-weight: weight(regular);
-}
-
-h2 {
-    font-size: 34px;
-    letter-spacing: 2px;
-}
-
-h3 {
-    font-weight: weight(regular);
-}
-h4 {
-    font-size: 23px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-p.card_picture-one--city {
-    font-size: 17px;
-    margin-left: 30px;
-    font-weight: 300;
 }
 
 header {
@@ -62,14 +29,6 @@ header {
         }
 }
 
-input {
-    border: none;
-    background: inherit;
-    font-size: 19px;
-    margin-left: 15px;
-    cursor: pointer;
-}
-
 main {
     height: auto;
     width: 100%;
@@ -80,12 +39,18 @@ main {
     padding: 2rem 0 50px 0px;
     margin-bottom: 56px;
     background: $card-color;
+    .home-btn {
+        width: 40vh;
+        height: 22px;
+        @include homeButton;
+    }
 }
+
 .nav, .card {
     padding: 45px 30px 100px 30px;
 }
 
-/*Page2*/
+/* Page Annexe */
 
 .fa-arrow-left:before {
     position: absolute;
@@ -99,39 +64,20 @@ main {
     flex-direction: column;
 }
 
-.card_picture-one {
-    background: url(../img/photo/img1.jpg) center;
-    @include placeCard;
-    @include cardPicture;
-
-}
-.card_picture-two {
-    background: url(../img/photo/img2.jpg) center;
-    @include cardPicture;
-    @include placeCard;
-}
-.card_picture-three {
-    background: url(../img/photo/img3.jpg) center;
-    @include cardPicture;
-    @include placeCard;
-}
-.card_picture-four {
-    background: url(../img/photo/img4.jpg) center;
-    @include cardPicture;
-    @include placeCard;
-}
 .menu_card {
-    background: #f6f6f6;
     margin-top: -12em;
     border-radius: 65px 65px;
     content-visibility: auto;
+    background: $card-color;
         .title_card {
             @include flexNormal;
         }
 }
+
 i.far.fa-heart.heart {
     font-size: 36px;
 }
+
 .entrances_card {
     margin-left: 50px;
         h2 {
@@ -147,34 +93,15 @@ li.bloc_card {
     align-items: flex-start;
     padding-left: 30px;
     margin-left: -70px;
+    background-color: $root-color;
     p {
         margin-top: -16px;
-        font-weight: 300;
+        font-weight: weight(regular);
         font-size: 21px;
     }
     span {
         position: absolute;
         right: 5em;
-        font-weight: 500;
-    }
-}
-
-.order {
-@include flexCenter;
-    margin-top: 15px;
-    padding-bottom: 95px;
-    .home-btn { 
-        width: 19em;
-        height: 3em;
-        border: none;
-
-        margin: 40px auto auto;
-        padding: 21px;
-        background: linear-gradient($secondary-color, $primary-color);
-        border-radius: 25px;
-        color: $root-color;
-        cursor: pointer;
-        font-size: 20px;
-        @include flexCenter
+        font-weight: weight(medium);
     }
 }
