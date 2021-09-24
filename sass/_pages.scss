@@ -34,10 +34,10 @@ li {
             @include placeCard;
             background: url(../img/photo/img1.jpg) center;
             background-size: cover;
-                .card_picture-info {
-                    @include placeInfo;
-                }
-            }
+        }
+        .card_picture-info {
+            @include placeInfo;
+        }
 }
 
 .card_picture-two {
