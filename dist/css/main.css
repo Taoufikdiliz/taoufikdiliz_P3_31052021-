@@ -178,6 +178,10 @@ h3 {
   font-weight: 300;
 }
 
+h4 {
+  font-size: 23px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -305,15 +309,51 @@ i.far.fa-heart.heart {
 }
 
 .entrances_card {
-  margin-left: 30px;
-}
-.entrances_card ul {
-  width: 100%;
-  margin-left: -2em;
-  margin-right: 14em;
+  margin-left: 50px;
 }
 .entrances_card h2 {
   font-weight: 300;
   border-bottom: 3px solid #94E1CE;
   max-inline-size: 60px;
+}
+
+li.bloc_card {
+  width: 39em;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+  margin-left: -70px;
+}
+li.bloc_card p {
+  margin-top: -16px;
+  font-weight: 300;
+  font-size: 21px;
+}
+li.bloc_card span {
+  position: absolute;
+  right: 5em;
+  font-weight: 500;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding-bottom: 95px;
+}
+.order .home-btn {
+  width: 19em;
+  height: 3em;
+  border: none;
+  margin: 40px auto auto;
+  padding: 21px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
