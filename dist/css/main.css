@@ -26,10 +26,10 @@ p.card_picture-one--city {
 }
 
 li {
-  height: 109px;
+  height: 87px;
   border-radius: 25px;
   background: #F6F6F6;
-  margin: 28px 30px 0px -20px;
+  margin: 25px 0px 20px -40px;
   box-shadow: 5px 5px 5px #dedede;
   cursor: pointer;
   display: flex;
@@ -165,7 +165,7 @@ li:hover {
   width: 22px;
   height: 22px;
   position: absolute;
-  left: 40px;
+  left: 11px;
   background: #9356DC;
   -moz-text-align-last: center;
        text-align-last: center;
@@ -215,7 +215,7 @@ body {
 }
 
 .logo h1 {
-  font-size: 54px;
+  font-size: 36px;
   letter-spacing: 1px;
   margin: 14px 0 23px 0;
 }
@@ -223,7 +223,6 @@ body {
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 300;
-  font-size: 50px;
 }
 
 h2 {
@@ -237,7 +236,7 @@ h3 {
 }
 
 h4 {
-  font-size: 23px;
+  font-size: 17px;
 }
 
 a {
@@ -266,7 +265,7 @@ main {
 }
 
 .nav, .card {
-  padding: 45px 30px 100px 30px;
+  padding: 5px 30px 100px 30px;
 }
 
 .home {
@@ -322,9 +321,9 @@ main {
 /* Page Annexe */
 .fa-arrow-left:before {
   position: absolute;
-  left: 2em;
-  top: 58px;
-  font-size: 33px;
+  left: 1em;
+  top: 47px;
+  font-size: 25px;
 }
 
 .menu_card {
@@ -338,6 +337,7 @@ main {
   background: #F6F6F6;
 }
 .menu_card .title_card {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -349,43 +349,42 @@ i.far.fa-heart.heart {
 }
 
 .entrances_card {
-  margin-left: 50px;
+  margin-left: 19px;
 }
 .entrances_card h2 {
   font-weight: 300;
   border-bottom: 3px solid #94E1CE;
   max-inline-size: 60px;
-  margin-top: 100px;
+  margin: 100px 0 0 -10px;
 }
 
 li.bloc_card {
   display: inline-flex;
-  width: 100%;
+  width: 99%;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 30px;
-  margin-left: -5em;
-  margin-right: 17em;
+  padding-left: 23px;
+  margin-left: -4.5em;
+  margin-right: 20em;
   background-color: #fff;
 }
 li.bloc_card p {
   margin-top: -16px;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 13px;
 }
 li.bloc_card span {
   position: fixed;
-  right: 6em;
+  right: 9em;
   font-weight: 400;
+}
+li.bloc_card span:hover {
+  background: #99E2D0;
+  border-radius: 0 25px 25px 0;
+  padding: 65px 59px 30px 34px;
+  margin: -66px -31px 0 0;
 }
 
 .index {
   background: #F6F6F6;
-}
-
-span:hover {
-  background: #99E2D0;
-  border-radius: 0 25px 25px 0;
-  padding: 70px 50px 17px 60px;
-  margin: -70px -46px 0 0;
 }/*# sourceMappingURL=main.css.map */

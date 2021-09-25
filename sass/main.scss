@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 .logo h1 {
-    font-size: 54px;
+    font-size: 36px;
     letter-spacing: 1px;
     margin: 14px 0 23px 0;
 }
@@ -21,7 +21,7 @@ body {
 h1 {
     font-family: "Shrikhand", cursive;
     font-weight: weight(regular);
-    font-size: 50px;
+
 }
 
 h2 {
@@ -35,7 +35,7 @@ h3 {
 }
 
 h4 {
-    font-size: 23px;
+    font-size: 17px;
 }
 
 a {
@@ -62,7 +62,7 @@ main {
 }
 
 .nav, .card {
-    padding: 45px 30px 100px 30px;
+    padding: 5px 30px 100px 30px;
 }
 
 .home {
@@ -96,9 +96,9 @@ main {
 
 .fa-arrow-left:before {
     position: absolute;
-    left: 2em;
-    top: 58px;
-    font-size: 33px;
+    left: 1em;
+    top: 47px;
+    font-size: 25px;
 }
 
 .menu_card {
@@ -109,6 +109,7 @@ main {
     content-visibility: auto;
     background: $card-color;
         .title_card {
+            margin-top: 30px;
             @include flexNormal;
         }
 }
@@ -118,43 +119,42 @@ i.far.fa-heart.heart {
 }
 
 .entrances_card {
-    margin-left: 50px;
+    margin-left: 19px;
         h2 {
             font-weight: 300;
             border-bottom: 3px solid #94E1CE;
             max-inline-size: 60px;
-            margin-top: 100px;
+            margin: 100px 0 0 -10px;
         }
 }
 
 li.bloc_card {
     display: inline-flex;
-    width: 100%;
+    width: 99%;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 30px;
-    margin-left: -5em;
-    margin-right: 17em;
+    padding-left: 23px;
+    margin-left: -4.5em;
+    margin-right: 20em;
     background-color: $root-color;
         p {
             margin-top: -16px;
             font-weight: weight(regular);
-            font-size: 21px;
+            font-size: 13px;
         }
         span {
             position: fixed;
-            right: 6em;
+            right: 9em;
             font-weight: weight(medium);
+            &:hover {
+                background: $tertiary-color;
+                border-radius: 0 25px 25px 0;
+                padding: 65px 59px 30px 34px;
+                margin: -66px -31px 0 0;
+                }
         }
 }
 
 .index {
     background: $card-color;
 }
-
-span:hover {
-    background: $tertiary-color;
-    border-radius: 0 25px 25px 0;
-    padding: 70px 50px 17px 60px;
-    margin: -70px -46px 0 0;
-    }
