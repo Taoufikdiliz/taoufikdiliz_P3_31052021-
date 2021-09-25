@@ -49,14 +49,9 @@
     font-size: 20px;
 }
 
-.order {
-    @include flexCenter;
-    margin-top: 15px;
-    padding-bottom: 95px;
-        .home-btn { 
-            width: 14em;
-            height: 3em;
-            @include flexCenter;
-            @include homeButton;
-        }
+@mixin hoverButton {
+    transition: transform 400ms;
+    &:hover {
+    transform: scale(1.15);
+    }
 }

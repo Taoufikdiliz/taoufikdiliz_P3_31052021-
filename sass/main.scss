@@ -61,21 +61,36 @@ main {
     width: 100%;
 }
 
+.nav, .card {
+    padding: 45px 30px 100px 30px;
+}
+
 .home {
     text-align: center;
     padding: 2rem 0 50px 0px;
     margin-bottom: 56px;
     background: $card-color;
-        .home-btn {
+        .btn {
             width: 40vh;
             height: 22px;
+            @include hoverButton;
             @include homeButton;
         }
 }
 
-.nav, .card {
-    padding: 45px 30px 100px 30px;
+.order {
+    @include flexCenter;
+    margin-top: 15px;
+    padding-bottom: 95px;
+        .btn {
+            width: 11em;
+            height: 1em;
+            @include hoverButton;
+            @include flexCenter;
+            @include homeButton;
+        }
 }
+
 
 /* Page Annexe */
 
@@ -89,9 +104,6 @@ main {
 .menu_card {
     @include flexBetween;
     flex-direction: column;
-}
-
-.menu_card {
     margin-top: -12em;
     border-radius: 65px 65px;
     content-visibility: auto;
@@ -111,15 +123,18 @@ i.far.fa-heart.heart {
             font-weight: 300;
             border-bottom: 3px solid #94E1CE;
             max-inline-size: 60px;
+            margin-top: 100px;
         }
 }
 
 li.bloc_card {
-    width: 39em;
+    display: inline-flex;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 30px;
-    margin-left: -70px;
+    margin-left: -5em;
+    margin-right: 17em;
     background-color: $root-color;
         p {
             margin-top: -16px;
@@ -127,8 +142,19 @@ li.bloc_card {
             font-size: 21px;
         }
         span {
-            position: absolute;
-            right: 5em;
+            position: fixed;
+            right: 6em;
             font-weight: weight(medium);
         }
 }
+
+.index {
+    background: $card-color;
+}
+
+span:hover {
+    background: $tertiary-color;
+    border-radius: 0 25px 25px 0;
+    padding: 70px 50px 17px 60px;
+    margin: -70px -46px 0 0;
+    }

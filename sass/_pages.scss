@@ -4,7 +4,13 @@ input {
     font-size: 19px;
     margin-left: 15px;
     cursor: pointer;
+    outline: none;
 }
+
+::placeholder {
+    color:black;
+}
+
 
 p.card_picture-one--city {
     font-size: 17px;
@@ -30,6 +36,7 @@ li {
     padding-top: 3rem;
     font-weight: weight(regular);
     cursor: pointer;
+    align-self: flex-start;
         .card_picture-one {
             @include placeCard;
             background: url(../img/photo/img1.jpg) center;

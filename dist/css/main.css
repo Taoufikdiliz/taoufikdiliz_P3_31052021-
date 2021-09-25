@@ -1,32 +1,22 @@
-.order {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  padding-bottom: 95px;
-}
-.order .home-btn {
-  width: 14em;
-  height: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px auto auto;
-  padding: 21px;
-  border: none;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-}
-
 input {
   border: none;
   background: inherit;
   font-size: 19px;
   margin-left: 15px;
   cursor: pointer;
+  outline: none;
+}
+
+::-moz-placeholder {
+  color: black;
+}
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+::placeholder {
+  color: black;
 }
 
 p.card_picture-one--city {
@@ -54,6 +44,7 @@ li:hover {
   padding-top: 3rem;
   font-weight: weight(regular);
   cursor: pointer;
+  align-self: flex-start;
 }
 .card .card_picture-one {
   margin: -2px -3px 8em -2px;
@@ -274,15 +265,20 @@ main {
   width: 100%;
 }
 
+.nav, .card {
+  padding: 45px 30px 100px 30px;
+}
+
 .home {
   text-align: center;
   padding: 2rem 0 50px 0px;
   margin-bottom: 56px;
   background: #F6F6F6;
 }
-.home .home-btn {
+.home .btn {
   width: 40vh;
   height: 22px;
+  transition: transform 400ms;
   margin: 40px auto auto;
   padding: 21px;
   border: none;
@@ -292,9 +288,35 @@ main {
   cursor: pointer;
   font-size: 20px;
 }
+.home .btn:hover {
+  transform: scale(1.15);
+}
 
-.nav, .card {
-  padding: 45px 30px 100px 30px;
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding-bottom: 95px;
+}
+.order .btn {
+  width: 11em;
+  height: 1em;
+  transition: transform 400ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto auto;
+  padding: 21px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+.order .btn:hover {
+  transform: scale(1.15);
 }
 
 /* Page Annexe */
@@ -310,9 +332,6 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-}
-
-.menu_card {
   margin-top: -12em;
   border-radius: 65px 65px;
   content-visibility: auto;
@@ -336,14 +355,17 @@ i.far.fa-heart.heart {
   font-weight: 300;
   border-bottom: 3px solid #94E1CE;
   max-inline-size: 60px;
+  margin-top: 100px;
 }
 
 li.bloc_card {
-  width: 39em;
+  display: inline-flex;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 30px;
-  margin-left: -70px;
+  margin-left: -5em;
+  margin-right: 17em;
   background-color: #fff;
 }
 li.bloc_card p {
@@ -352,7 +374,18 @@ li.bloc_card p {
   font-size: 21px;
 }
 li.bloc_card span {
-  position: absolute;
-  right: 5em;
+  position: fixed;
+  right: 6em;
   font-weight: 400;
+}
+
+.index {
+  background: #F6F6F6;
+}
+
+span:hover {
+  background: #99E2D0;
+  border-radius: 0 25px 25px 0;
+  padding: 70px 50px 17px 60px;
+  margin: -70px -46px 0 0;
 }/*# sourceMappingURL=main.css.map */
